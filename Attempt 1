@@ -15,7 +15,7 @@ if i >4:
     print(2)
     print(3)
     prime = [2,3]
-    for n in range(5,10000,2):
+    for n in range(5,i+1):
         for p in prime:
             if p<=n**(1/2):
                 if n%p == 0:
