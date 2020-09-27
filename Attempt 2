@@ -1,0 +1,13 @@
+i = int(input("Upto what number do you want primes?"))
+
+prime = []
+for n in range(2,i+1):
+    for p in prime:
+        if p<=n**(1/2):
+            if n%p == 0:
+                break
+    else:
+        print(n)
+        prime.append(n)   
+
+    
